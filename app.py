@@ -49,7 +49,7 @@ def calc_output(irradiance, panel_power, num_panels, efficiency, sunlight_hours)
 if city and api_key:
   lat, lon = get_coordinates(city, api_key)
   if lat and lon:
-    weather_data = get_weather data (lat, lon, api_key)
+    weather_data = get_weather_data (lat, lon, api_key)
     if weather_data:
       #approximate the daily sunlight
       cloud_cover = weathe_data ["clouds"]["all"]
